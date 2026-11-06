@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="SharkWire">
+  <rect x="0" y="0" width="64" height="64" rx="14" fill="#07131D" />
+  <g fill="none" stroke="#21D4FD" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M5,30 L14,38" />
+    <path d="M5,50 L14,43" />
+    <path d="M16,38 C22,23 30,14 38,16 L33,5 L45,14 C51,16 55,20 58,24 L62,26" />
+    <path d="M60,30 C49,40 33,42 16,42" />
+  </g>
+  <circle cx="62" cy="26" r="2" fill="#21D4FD" stroke="none" />
+</svg>
