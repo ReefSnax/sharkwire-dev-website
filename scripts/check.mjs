@@ -73,9 +73,13 @@ check(
   html.includes("SharkWire is the technical home for projects, services, releases, and experiments."),
   "supporting line matches approved copy exactly"
 );
-check(html.includes("Built by Snaxine Reefica."), "footer credits Snaxine Reefica");
+check(html.includes("© 2026 Snaxine Reefica"), "footer credits Snaxine Reefica");
+check(
+  /href="https:\/\/github\.com\/ReefSnax"[^>]*rel="noopener noreferrer"/.test(html),
+  "GitHub link present with safe rel attributes"
+);
 check(html.includes(">SharkWire</span>"), "header wordmark renders as SharkWire");
-check(/<svg[^>]*class="brand__mark"/.test(html), "inline Cable Shark mark present in header");
+check(/<svg[^>]*class="brand__mark"/.test(html), "inline SharkWire mark present in header");
 
 // balanced-tag structural check (naive stack matcher, not a full parser)
 function checkBalancedTags(source, label) {
